@@ -11,7 +11,7 @@
                    HorizontalOptions="Center"/>
 
             <Label Text="Nombre: Dylan Jaramillo" Style="{StaticResource EtiquetaGlobal}"/>
-            <Label Text="Carrera: CARRERA" Style="{StaticResource EtiquetaGlobal}"/>
+            <Label Text="Carrera: Ingeniería Informática" Style="{StaticResource EtiquetaGlobal}"/>
             <Label Text="Paralelo: A" Style="{StaticResource EtiquetaGlobal}"/>
 
             <Button x:Name="btnVolver"
