@@ -5,7 +5,9 @@
              Title="Login">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="10">
-            <!-- Logo -->
+            <Image Source="logo.png"
+                   WidthRequest="150"
+                   HeightRequest="150"/>
 
             <Label Text="GIMNASIO - INICIO DE SESIÓN"
                    TextColor="Purple"
@@ -24,18 +26,20 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Label Text="Usuario:" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Usuario:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="0" Grid.Column="0"/>
                 <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario" Grid.Row="0" Grid.Column="1"/>
 
-                <Label Text="Contraseña:" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Contraseña:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="1" Grid.Column="0"/>
                 <Entry x:Name="txtContrasena" Placeholder="Ingrese la contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
 
                 <Button x:Name="btnIniciarSesion"
                         Text="Iniciar sesión"
+                        Style="{StaticResource BotonGlobal}"
                         Clicked="btnIniciarSesion_Clicked"
                         Grid.Row="2" Grid.Column="0"/>
                 <Button x:Name="btnAcercaDe"
                         Text="Acerca de"
+                        Style="{StaticResource BotonGlobal}"
                         Clicked="btnAcercaDe_Clicked"
                         Grid.Row="2" Grid.Column="1"/>
             </Grid>

@@ -5,7 +5,7 @@
              Title="Registro">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="10">
-            <Label x:Name="lblUsuario" Text="Usuario conectado: "/>
+            <Label x:Name="lblUsuario" Text="Usuario conectado: " Style="{StaticResource EtiquetaGlobal}"/>
 
             <Label Text="REGISTRO"
                    TextColor="Blue"
@@ -24,9 +24,9 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
-                <Label Text="Apellido" Grid.Row="0" Grid.Column="1"/>
-                <Label Text="Edad" Grid.Row="0" Grid.Column="2"/>
+                <Label Text="Nombre" Style="{StaticResource EtiquetaGlobal}" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Apellido" Style="{StaticResource EtiquetaGlobal}" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Edad" Style="{StaticResource EtiquetaGlobal}" Grid.Row="0" Grid.Column="2"/>
 
                 <Entry x:Name="txtNombre" Placeholder="Ingresar Nombre" TextChanged="SoloLetras_TextChanged" Grid.Row="1" Grid.Column="0"/>
                 <Entry x:Name="txtApellido" Placeholder="Ingresar Apellido" TextChanged="SoloLetras_TextChanged" Grid.Row="1" Grid.Column="1"/>
@@ -47,10 +47,10 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Label Text="Fecha de inicio:" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Fecha de inicio:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="0" Grid.Column="0"/>
                 <DatePicker x:Name="dpFecha" Format="dd/MM/yyyy" Grid.Row="0" Grid.Column="1"/>
 
-                <Label Text="Plan:" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Plan:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="1" Grid.Column="0"/>
                 <Picker x:Name="pkPlan" Title="Seleccione" Grid.Row="1" Grid.Column="1">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
@@ -62,14 +62,15 @@
                     </Picker.ItemsSource>
                 </Picker>
 
-                <Label Text="Casillero:" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Casillero:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="2" Grid.Column="0"/>
                 <Switch x:Name="swCasillero" HorizontalOptions="Start" Grid.Row="2" Grid.Column="1"/>
 
-                <Label Text="Monto Inicial:" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="Monto Inicial:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="3" Grid.Column="0"/>
                 <Entry x:Name="txtMonto" Placeholder="120 - 600" Keyboard="Numeric" TextChanged="SoloDecimales_TextChanged" Grid.Row="3" Grid.Column="1"/>
 
                 <Button x:Name="btnCalcular"
                         Text="Calcular Pago mensual"
+                        Style="{StaticResource BotonGlobal}"
                         Clicked="btnCalcular_Clicked"
                         Grid.Row="4" Grid.Column="0"/>
                 <Entry x:Name="txtPago" Placeholder="Pago mensual" IsReadOnly="True" Grid.Row="4" Grid.Column="1"/>
@@ -77,6 +78,7 @@
 
             <Button x:Name="btnVerResumen"
                     Text="Ver Resumen"
+                    Style="{StaticResource BotonGlobal}"
                     Clicked="btnVerResumen_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>

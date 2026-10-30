@@ -10,12 +10,13 @@
                    FontAttributes="Bold"
                    HorizontalOptions="Center"/>
 
-            <Label Text="Nombre: Dylan Jaramillo"/>
-            <Label Text="Carrera: CARRERA"/>
-            <Label Text="Paralelo: A"/>
+            <Label Text="Nombre: Dylan Jaramillo" Style="{StaticResource EtiquetaGlobal}"/>
+            <Label Text="Carrera: CARRERA" Style="{StaticResource EtiquetaGlobal}"/>
+            <Label Text="Paralelo: A" Style="{StaticResource EtiquetaGlobal}"/>
 
             <Button x:Name="btnVolver"
                     Text="Volver"
+                    Style="{StaticResource BotonGlobal}"
                     Clicked="btnVolver_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>

@@ -5,7 +5,7 @@
              Title="Resumen">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="10">
-            <Label x:Name="lblUsuario" Text="Usuario conectado: "/>
+            <Label x:Name="lblUsuario" Text="Usuario conectado: " Style="{StaticResource EtiquetaGlobal}"/>
 
             <Label Text="RESUMEN"
                    FontSize="22"
@@ -29,41 +29,43 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Label Text="Nombre:" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Nombre:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="0" Grid.Column="0"/>
                 <Label x:Name="lblNombre" Grid.Row="0" Grid.Column="1"/>
 
-                <Label Text="Apellido:" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Apellido:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="1" Grid.Column="0"/>
                 <Label x:Name="lblApellido" Grid.Row="1" Grid.Column="1"/>
 
-                <Label Text="Edad:" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Edad:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="2" Grid.Column="0"/>
                 <Label x:Name="lblEdad" Grid.Row="2" Grid.Column="1"/>
 
-                <Label Text="Fecha de inicio:" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="Fecha de inicio:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="3" Grid.Column="0"/>
                 <Label x:Name="lblFecha" Grid.Row="3" Grid.Column="1"/>
 
-                <Label Text="Plan:" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="Plan:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="4" Grid.Column="0"/>
                 <Label x:Name="lblPlan" Grid.Row="4" Grid.Column="1"/>
 
-                <Label Text="Casillero:" Grid.Row="5" Grid.Column="0"/>
+                <Label Text="Casillero:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="5" Grid.Column="0"/>
                 <Label x:Name="lblCasillero" Grid.Row="5" Grid.Column="1"/>
 
-                <Label Text="Monto Inicial:" Grid.Row="6" Grid.Column="0"/>
+                <Label Text="Monto Inicial:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="6" Grid.Column="0"/>
                 <Label x:Name="lblMonto" Grid.Row="6" Grid.Column="1"/>
 
-                <Label Text="Pago mensual:" Grid.Row="7" Grid.Column="0"/>
+                <Label Text="Pago mensual:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="7" Grid.Column="0"/>
                 <Label x:Name="lblPago" Grid.Row="7" Grid.Column="1"/>
 
-                <Label Text="Pago Total:" Grid.Row="8" Grid.Column="0"/>
+                <Label Text="Pago Total:" Style="{StaticResource EtiquetaGlobal}" Grid.Row="8" Grid.Column="0"/>
                 <Label x:Name="lblTotal" Grid.Row="8" Grid.Column="1"/>
             </Grid>
+
+            <Button x:Name="btnExportar" Text="Exportar" Style="{StaticResource BotonGlobal}" Clicked="btnExportar_Clicked"/>
 
             <Grid ColumnSpacing="15">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btnNuevo" Text="Nuevo registro" Clicked="btnNuevo_Clicked" Grid.Column="0"/>
-                <Button x:Name="btnCerrarSesion" Text="Cerrar sesión" Clicked="btnCerrarSesion_Clicked" Grid.Column="1"/>
+                <Button x:Name="btnNuevo" Text="Nuevo registro" Style="{StaticResource BotonGlobal}" Clicked="btnNuevo_Clicked" Grid.Column="0"/>
+                <Button x:Name="btnCerrarSesion" Text="Cerrar sesión" Style="{StaticResource BotonGlobal}" Clicked="btnCerrarSesion_Clicked" Grid.Column="1"/>
             </Grid>
         </VerticalStackLayout>
     </ScrollView>
